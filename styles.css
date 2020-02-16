@@ -102,6 +102,7 @@ h2 {
 .card-photo {
   width: 100%;
 }
+
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
@@ -183,16 +184,31 @@ a.social:hover {
 
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
+
+  .flex,
+  .col {
+    display: flex; 
+  }
   
   .flex {
       display: -ms-flexbox;      /* TWEENER - IE 10 */
-      display: flex; 
       max-width: 1200px;
       -ms-flex-pack: distribute;
       justify-content: space-around;
       margin: 0 auto;
   }
 
+  .interests-box {
+    flex-wrap: wrap;
+  }
+
+  .col {
+    flex-direction: column;
+  }
+
+  .card-photo {
+    margin-top: auto;
+  }
   header {
     min-height: 470px;
   }
